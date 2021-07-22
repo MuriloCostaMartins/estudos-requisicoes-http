@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Requisições HTTP</title>
+
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+        .request-http:hover {
+            background: #dbdada;
+        }
+        .card {
+            background: #123456;
+            color: #fff;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudos de Requisições HTTP</h1>
+    <div class="request-http">
+        <h3>GET</h3>
+        <div id="content"></div>
+        <div id="no_items"></div>
+        <button onClick="methodGet()">TESTAR</button>
+    </div>
+    <div class="request-http">
+        <h3>POST</h3>
+        <form>
+            Titulo:<br> <input type="text" id="title"><br>
+            Descrição:<br><textarea name="describe" id="describe" cols="30" rows="10"></textarea><br>
+            Tag:<br><input type="text" id="tag"><br>
+            <button onClick="methodPost()">TESTAR</button>
+        </form>  
+        
+    </div>
+    <div class="request-http">
+        <h3>PUT</h3>
+        <form>
+            Id:<br> <input type="number" id="id-number"><br>
+            Titulo:<br> <input type="text" id="titlePut"><br>
+            Descrição:<br><textarea name="describe" id="describePut" cols="30" rows="10"></textarea><br>
+            Tag:<br><input type="text" id="tagPut"><br>
+            <button onClick="methodPut()">TESTAR</button>
+        </form> 
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
